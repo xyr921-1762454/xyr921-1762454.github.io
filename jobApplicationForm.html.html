@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Job Application</title>
+</head>
+<body>
+
+<h2>Job Application</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset>
+		<legend>Account</legend>
+		<div class="field">
+			<label>Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+			<input type="password" name="pwd">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			<label>Last Name:</label> 
+			<input type="text" name="lastname">
+        </div>
+        <div class="field">
+			<label>First Name:</label> 
+			<input type="text" name="firstname">
+		</div>
+		<div class="field">
+			<label>Street Address:</label> 
+			<input type="text" name="street">
+		</div>
+		<div class="field">
+			<label>City:</label> 
+			<input type="text" name="city">
+		</div>
+		<div class="field">
+			<label>State:</label> 
+			<select name="state">
+				<option value="" selected="true">Choose a State</option>
+				<option value="AL">Alabama</option>
+				<option value="AK">Alaska</option>
+				<option value="NC">North Carolina</option>
+			</select>
+		</div>
+		<div class="field">
+			<label>ZIP:</label> 
+			<input type="text" name="zip">
+        </div>
+        <div class="field">
+                <label>Graduation School:</label> 
+                <select name="school">
+                    <option value="" selected="true">Choose a School</option>
+                    <option value="UW">UW</option>
+                    <option value="UCSD">UCSD</option>
+                    <option value="UCLA">UCLA</option>
+                    <option value="UNC">UNC</option>
+                    <option value="WFU">WFU</option>
+                    <option value="NYU">NYU</option>
+                    <option value="UCB">UCB</option>
+                </select>
+            </div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Availability</legend>
+		<div class="field">
+			<label>Are you legally able to be employed in this country?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field">
+			<label>What type of position are you seeking? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
+				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
+				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
+				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Hours available</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>Why do you deserve this job?</label><br>
+			<textarea name="deserve" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>List 5 reasons about why you still want to work at our company even if we can't afford you your salary.</label><br>
+			<textarea name="deserve" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Describe a recent project:</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preference</legend>
+        <div class="field">
+                <label>Do you love Taylor Swift? List five reasons. </label><br>
+                <textarea name="essay" rows="6" cols="60"></textarea>
+        </div>
+        <div class="field">
+            <label>Do you like eating fish?</label> 
+            <input type="radio" name="legal" value="yes">Yes
+            <input type="radio" name="legal" value="no">No
+        </div> 
+        <div class="field">
+                <label>Do you prefer TV series to movie?</label> 
+                <input type="radio" name="legal" value="yes">Yes
+                <input type="radio" name="legal" value="no">No
+        </div> 
+        <div class="field">
+                <label>What would you prefer?</label> 
+                <input type="checkbox" name="pet" value="Dog">I prefer dog.<br>
+                <input type="checkbox" name="pet" value="Cat">I prefer cat.
+        </div>
+        <div class="field">
+                <label>Which class do you prefer?</label> 
+                <input type="checkbox" name="class" value="info">I prefer info.<br>
+                <input type="checkbox" name="class" value="math">I prefer math.
+        </div>
+        <div class="field">
+                <label>Which TA do you prefer?</label> 
+                <input type="checkbox" name="TA" value="Nick">I prefer Nick.<br>
+                <input type="checkbox" name="TA" value="Nick">I prefer Nick.
+        </div> 
+    </fieldset>
+    <input type="submit" value="Submit form">
+
+</form>
+</body>
+</html>
